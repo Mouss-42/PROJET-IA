@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientation BTS SIO</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Orientation BTS SIO : SISR ou SLAM</h1>
+        <form action="{{ url_for('result') }}" method="post">
+            <label for="description">Décrivez vos intérêts et compétences :</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+            <button type="submit">Analyser</button>
+        </form>
+    </div>
+</body>
+</html>
+
