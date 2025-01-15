@@ -1,8 +1,21 @@
 {
+  "name": "PROJET-IA",
+  "version": "1.0.0",
+  "description": "Projet de déploiement sur Netlify",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm run build:static",
+    "build:static": "flask run && npm run build:web",
+    "build:web": "echo 'Création du build web (ajouter vos commandes de compilation ici)'"
+  },
   "dependencies": {
     "flask": "^0.2.10",
     "nltk": "^0.0.1",
     "numpy": "^0.0.1",
     "unidecode": "^1.1.0"
-  }
+  },
+  "devDependencies": {},
+  "author": "Votre Nom",
+  "license": "MIT"
 }
