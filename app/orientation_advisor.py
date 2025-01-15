@@ -1,13 +1,39 @@
 class OrientationAdvisor:
     def __init__(self):
         self.sisr_keywords = [
-            "réseau", "infrastructure", "sécurité", "système", "virtualisation",
-            "cloud", "serveur", "maintenance", "administration"
-        ]
+    "réseau", "infrastructure", "sécurité", "système", "virtualisation",
+    "cloud", "serveur", "maintenance", "administration", "firewall", "routeur",
+    "commutateur", "VPN", "proxy", "TCP/IP", "DNS", "DHCP", "HTTP", "HTTPS",
+    "FTP", "SSH", "monitoring", "diagnostic", "pare-feu", "active directory",
+    "LDAP", "NAS", "SAN", "backup", "restauration", "haute disponibilité",
+    "virtualisation", "VMware", "Hyper-V", "Kubernetes", "Docker", "conteneur",
+    "postes clients", "politiques de sécurité", "audits", "SIEM", "logs",
+    "QoS", "câblage", "LAN", "WAN", "VLAN", "WIFI", "contrôle d'accès",
+    "matériel", "supervision", "script", "PowerShell", "Bash", "Linux",
+    "Windows Server", "cybersécurité", "certifications", "normes ISO",
+    "protection des données", "GDPR", "cryptographie", "antivirus", "IDS",
+    "IPS", "centre de données", "virtualisation réseau", "cloud privé",
+    "cloud public", "Azure", "AWS", "Google Cloud", "proxy inverse"
+]
+
         self.slam_keywords = [
-            "développement", "programmation", "application", "logiciel", "web",
-            "base de données", "mobile", "algorithmique", "interface"
-        ]
+    "développement", "programmation", "application", "logiciel", "web",
+    "base de données", "mobile", "algorithmique", "interface", "Java",
+    "Python", "C#", "PHP", "HTML", "CSS", "JavaScript", "React", "Vue.js",
+    "Angular", "API", "REST", "SOAP", "JSON", "SQL", "MySQL", "PostgreSQL",
+    "SQLite", "NoSQL", "MongoDB", "framework", "Spring", "Django", "Flask",
+    "Node.js", "Express", "Laravel", "Symfony", "UX/UI", "design", "front-end",
+    "back-end", "full-stack", "MVC", "ORM", "Git", "GitHub", "CI/CD",
+    "tests unitaires", "tests d'intégration", "Agile", "Scrum", "méthodologie",
+    "analyse", "modélisation", "UML", "diagrammes", "user stories", "prototypage",
+    "intelligence artificielle", "machine learning", "chatbot", "sécurité web",
+    "authentification", "JWT", "OAuth", "serveurs web", "Apache", "Nginx",
+    "hébergement", "Docker", "conteneurisation", "debugging", "optimisation",
+    "performance", "documentation", "IDE", "Eclipse", "Visual Studio Code",
+    "Android", "iOS", "Swift", "Kotlin", "projets", "bases relationnelles",
+    "bases non relationnelles", "big data", "devOps"
+]
+
 
     def analyze(self, description):
         description = description.lower()
